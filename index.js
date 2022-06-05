@@ -38,11 +38,6 @@ const swaggerOption = {
   app.use("/api-docs", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
   /** Swagger Initialization - END */
 
-  
-// app.use("/test", (req,res) =>{
-//     console.log("Received request 2");
-//     res.status(200).send("success");
-// });
 
 //listen on port 3000
 app.listen(3000, () => {

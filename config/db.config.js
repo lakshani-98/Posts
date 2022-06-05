@@ -8,12 +8,12 @@ const db = createPool({
   database: "bh9bhq7k3h2aphzhhl7n",
   connectionLimit: 5,
 });
-/** Connection pool creation - END */
-// db.query(`select * from users`, (err, result, fields) =>{
-//   if(err){
-//     return console.log(err);
-//   }
-//   return console.log(result);
-// }
-// );
+// /** Connection pool creation - END */
+ db.query(`select * from users`, (err, result, fields) =>{
+ if(err){
+   return console.log(err);
+   }
+   return console.log(result);
+ }
+ );
 module.exports = db;
